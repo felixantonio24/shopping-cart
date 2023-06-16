@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Proyecto gen27</title>
+    <!-- Google-fonts - oswald  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Playfair:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav" id="navbar">
+        <img src="./assets/img/logo_nombre.png" alt="logo_name" class="nav__img">
+        <button class="nav__button nav__button--toggle">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <section class="nav__car" id="car">
+            <div id="car__list"></div>
+            <button class="empty__button" id="empty-car">Vaciar carrito</button>
+        </section>    
+    </nav>
+
+    <header class="header">
+        <img src="./assets/img/logo blanco.png" alt="logo_header" class="header__img">
+    </header>
+
+    <main class="main">
+        <section class="main__section">
+           <h3 class="main__h3">Todos nuestros productos</h3>
+           <!-- lista de productos -->
+           <div id="products-container" class="main__products">
+
+           </div>
+           <div class='products__more'>
+            <button class="products__more-button">Mas productos</button>
+           </div>
+        </section>
+
+        <section class="modal" id="modal-container">
+            <div class="close">
+                <i class="fa-solid fa-x modal__icon" ></i>
+            </div>
+            <div id="modal-element" class="modal__view">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p"></p>© LLAMA GROUPCS🦙
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/c0d4b7bca0.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
